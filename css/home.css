@@ -1,0 +1,618 @@
+#hero {
+	height: 40em;
+	background-image: url("../images/bg3.png");
+	background-size: cover;
+	position: relative;
+	margin-top: 6.25em;
+}
+#hero section {
+  bottom: 6em;
+  left: 6em;
+  position: absolute;
+  z-index: 3;
+  background: rgba(217, 217, 217, 0.65);
+  padding: 3em 1.5em;
+  border-radius: 1.5em;
+  text-align: center;
+  width: 40%;
+  max-width: 25em;
+}
+#hero h1{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5em;
+  color: rgba(1, 18, 62, 1);
+  text-shadow: 0em 0em 3em white;
+}
+#hero h1 .span-1{
+  font-size: 1.5em;
+}
+#hero h1 .span-2{
+  font-size: 1.2em;
+}
+#reserve-link {
+  display: inline-block;
+  margin: 0 auto;
+  background: white;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+#reserve-link .span-1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #01123e;
+  font-size: 1.25em;
+  vertical-align: middle;
+}
+#reserve-link .material-symbols-outlined {
+  font-weight: bold;
+  color: white;
+  background: #de1f26;
+  font-size: 2em;
+  border-radius: 1em;
+  vertical-align: middle;
+  padding: 0.1em;
+}
+.hero-slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background-size: cover;
+    transition: 1s;
+    z-index: 1;
+}
+.hero-slide.active{
+  opacity: 1;
+}
+#slider-nav {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  text-align: center;
+  bottom: 2em;
+  left: 0;
+}
+.slider-button {
+  background: white;
+  border: 0;
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  opacity: 0.5;
+  transition: 1s;
+  cursor: pointer;
+}
+.slider-button.active{
+  opacity: 1;
+}
+#slide-1 {
+  background-position: top;
+}
+#slide-2{
+  background-position: center right;
+}
+#slide-3 {
+  background-position: center;
+}
+#slide-4 {
+  background-position: center;
+}
+#slide-5 {
+  background-position: top;
+}
+@media(max-width:1000px){
+  #hero section{
+    left: 1em;
+    width: 24em;
+  }
+}
+@media(max-width:750px){
+  #hero{
+    height: 40em;
+    margin-top: 6.5em;
+  }
+  #hero h1{
+    color: white;
+    text-shadow: none;
+  }
+  .hero-slide{
+    height: 20em;
+  }
+  #hero section{
+    height: 20em;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+    background: url("../images/waves2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #21304d;
+  }
+  #slider-nav{
+    bottom: 21em;
+  }
+}
+/*====================*/
+
+#tours {
+  background: #C5D5E4;
+  background-image: url("../images/waves1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#tour-header{
+  width: 100%;
+  text-align: center;
+}
+#tours h2 {
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #01123e;
+}
+#tours h2 span {
+  display: block;
+  font-size: 0.8em;
+}
+#tours ul{
+  display: table;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+#tours ul li{
+  display: table-cell;
+  width: 33%;
+  padding: 1em;
+  text-align: center;
+}
+.tour{
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 28em;
+  border-radius: 1.5em;
+}
+#snorkel-tour .tour{
+  background-image: url("../images/bg1.png");
+  background-size: cover;
+  background-position: center;
+}
+#private-tour .tour{
+  background-image: url("../images/private-tour.jpg");
+  background-size: 200%;
+  background-position: center;
+}
+#private-boat .tour{
+  background-image: url("../images/private-boat.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.tour section{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 8em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tour section h3{
+  color: white;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 0em 0em 1em black;
+  max-width: 10em;
+  margin: 0 auto;
+  line-height: 1em;
+}
+.tour section span{
+  font-size:1.25em;
+  font-family: "Bakbak One";
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0em 0em 1em black;
+  margin-top: 1em;
+  display: block;
+}
+.tour section span b{
+  font-size:1.35em;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.learn-more {
+  position: absolute;
+  left: 2em;
+  bottom: 2em;
+  background: rgba(0, 78, 137, 1);
+  border-radius: 2em;
+  padding: 0.5em 0.5em;
+  box-shadow: 0em 0em 1em rgba(0,0,0,0.25);
+}
+.learn-more .span-1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.25em;
+  vertical-align: middle;
+  padding-left: 0.5em;
+  display: inline-block;
+  width: 3em;
+  line-height: 1em;
+}
+.learn-more .material-symbols-outlined {
+  background: #1e1e1e;
+  color: white;
+  vertical-align: middle;
+  border-radius: 1em;
+  font-size: 1.75em;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+.book-now{
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+  background: rgb(222, 31, 38);
+  border-radius: 2em;
+  padding: 0.5em 0.5em;
+  box-shadow: 0em 0em 1em rgba(0,0,0,0.25);
+}
+.book-now .span-1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.25em;
+  vertical-align: middle;
+  padding-left: 0.5em;
+  width: 3em;
+  display: inline-block;
+  line-height: 1em;
+}
+.book-now .material-symbols-outlined {
+  background: #1e1e1e;
+  color: white;
+  vertical-align: middle;
+  border-radius: 1em;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  padding: 0.125em;
+}
+@media(max-width: 1070px){
+  .learn-more{
+    bottom: 4.5em;
+    left: 1em;
+  }
+  .book-now{
+    bottom: 1em;
+    right: auto;
+    left: 1em;
+  }
+  .book-now .span-1,
+  .learn-more .span-1 {
+    width: auto;
+  }
+  #tours ul li{
+    padding: 0.5em;
+  }
+}
+@media(max-width:900px){
+  #tours {
+    background-image: url("../images/waves1mobile.jpg");
+    background-size: contain;
+    background-position: center;
+  }
+  #tours ul{
+  display: block;
+    width: 100%;
+}
+#tours ul li{
+  display: block;
+  width: 95%;
+  max-width: 30em;
+  margin: 0 auto;
+  padding: 1em;
+}
+}
+
+.reading-section {
+  display: table;
+  width: 100%;
+}
+.reading-section .img-container {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  height: 40em;
+}
+.reading-section .img-container img{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.reading-section.alt .img-container img{
+  width: auto;
+  height: 100%;
+}
+.reading-section article {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding: 2em;
+  text-align: center;
+  background: #20304d;
+  background-image: url("../images/waves2.jpg");
+  background-size: cover;
+}
+.reading-section.alt article{
+   background: #C5D5E4;
+   background-image: url("../images/waves1.jpg");
+   background-size: contain;
+   background-position: bottom;
+   background-repeat: no-repeat;
+}
+.reading-section article p{
+  color: white;
+  font-size: 1.15em;
+  line-height: 2em;
+}
+.reading-section.alt p{
+  color: black;
+}
+.reading-section article h2{
+  color: white;
+}
+.reading-section.alt article h2{
+  color: #333;
+}
+.reading-section .article-learn-more {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 0px;
+  background: white;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+.reading-section .article-learn-more .span-1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #01123e;
+  font-size: 1em;
+  vertical-align: middle;
+}
+.reading-section .article-learn-more .material-symbols-outlined {
+  font-weight: bold;
+  color: white;
+  background: #de1f26;
+  font-size: 1.25em;
+  border-radius: 1em;
+  vertical-align: middle;
+  padding: 0.1em;
+  margin-left: 0.25em;
+}
+
+.reading-section.alt .article-learn-more {
+ background: #004e89;
+}
+.reading-section.alt .span-1 {
+  color: white;
+}
+.reading-section.alt .material-symbols-outlined {
+  background: #1e1e1e;
+}
+
+@media(max-width:900px){
+.reading-section {
+  height: 50em;
+  display: block;
+  position: relative;
+  background: #20304d;
+}
+.reading-section.alt{
+  background-color: #c5d5e4;
+}
+.reading-section .img-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.reading-section .img-container img{
+  opacity: 0.25;
+  
+}
+.reading-section.alt .img-container img{
+  opacity: 0.2;
+}
+.reading-section article {
+  display: block;
+  background-color: transparent;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 2;
+  width: 100%;
+  background-image: none;
+}
+  .reading-section.alt article{
+    background-color: transparent;
+    background-image: none;
+  }
+  .reading-section article p{
+    font-size: 1.15em;
+  }
+}
+@media(max-width:550px){
+  .reading-section .img-container img{
+    width: auto;
+    height: 100%;
+  }
+}
+/*=======================================*/
+#additional-reading {
+  background: #c5d5e4;
+}
+#additional-reading h2 {
+  background-image: url("../images/aukai-catamaran.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#additional-reading  h2 span {
+  color: white;
+  background: rgba(0, 78, 137, 0.5);
+  padding: 4em 0em;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+#additional-reading .gallery{
+  padding: 1em;
+}
+#additional-reading .gallery ul{
+  display: table;
+  width: 100%;
+}
+#additional-reading .gallery ul li{
+  display: table-cell;
+  width: 33.3%;
+  position: relative;
+  height: 15em;
+  overflow: hidden;
+}
+#additional-reading .gallery ul li img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+#additional-reading .gallery ul li:nth-child(2){
+  border-left: 1em solid #c5d5e4;
+  border-right: 1em solid #c5d5e4;
+}
+/*============================================*/
+
+#additional-reading section {
+  display: table;
+  width: 100%;
+  padding: 1em 1em 3em 1em;
+}
+#additional-reading .contact {
+  display: table-cell;
+  width: 40%;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 1em;
+}
+#additional-reading article {
+  width: 60%;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em 1em 2em 2em;
+}
+#additional-reading h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #20304d;
+}
+#additional-reading ul {
+  margin: 1em auto;
+  line-height: 2em;
+  font-size: 1.15em;
+}
+#additional-reading li {
+  list-style-type: disc;
+}
+#additional-reading section p {
+  line-height: 2em;
+  text-align: justify;
+  margin-bottom: 1em;
+  font-size: 1em;
+}
+
+#additional-reading .contact a {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  line-height: 1.5em;
+  color: rgba(0, 78, 137, 1);
+}
+#additional-reading .contact a span {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+#additional-reading .learn-more {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  top: auto;
+  right: auto;
+  box-shadow: none;
+  display: inline-block;
+  font-size: 0.85em;
+  margin-top: 1em;
+  width: auto;
+}
+#additional-reading .learn-more .span-1{
+  width: auto;
+}
+@media(max-width:900px){
+  #additional-reading section {
+    display: block;
+    width: 100%;
+    padding: 1em;
+  }
+  #additional-reading .contact {
+    display: block;
+    width: 100%;
+    padding: 5em 0em;
+  }
+  #additional-reading article {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }  
+  #additional-reading article ul{
+    width: 20em;
+    text-align: left;
+  }
+  #additional-reading article ul li{
+    list-style-position: outside;
+  }
+}
+@media(max-width:800px){
+  #additional-reading .gallery ul li{
+    height: 8em;
+  }
+  #additional-reading article{
+    padding: 1em;
+  }
+}
+@media(max-width:500px){
+  #additional-reading .gallery ul li:nth-child(2){
+    border-left: 0.5em solid #c5d5e4;
+    border-right: 0.5em solid #c5d5e4;
+  }
+  #additional-reading  h2 span {
+    padding: 2em 0em;
+    font-size: 1.25em;
+  }
+}
+iframe
+{
+  width: 100%;
+}

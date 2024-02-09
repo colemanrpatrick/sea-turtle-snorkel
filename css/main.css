@@ -1,0 +1,453 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+.material-symbols-outlined {
+  vertical-align: top;
+  font-size: 1.33em;
+}
+a {
+  text-decoration: none !important;
+}
+b {
+  font-weight: bold !important;
+}
+ul,
+ul li {
+  list-style-type: none;
+  list-style-position: inside;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 32px;
+  background-color: #1E1E1E;
+}
+@media (max-width: 2280px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media (max-width: 2160px) {
+  body {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1608px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 350px) {
+  body {
+    font-size: 10px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+header {
+  font-family: "Bakbak One";
+  font-weight: bold;
+}
+p,
+a,
+b,
+ul,
+li {
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+}
+
+#masthead {
+  width: 100%;
+  display: block;
+  overflow: visible;
+  background: rgba(0, 78, 137, 0.85);
+  position: absolute;
+  max-width: 85em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+#logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13.5em;
+  text-align: center;
+}
+#logo img {
+  width: 6em;
+  margin: 0 auto;
+  display: block;
+  margin-top: 0.5em;
+}
+#logo a {
+  display: block;
+}
+#logo b {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-family: "Bakbak One";
+  color: white;
+}
+#logo span {
+  display: block;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+#online-reservation {
+  position: absolute;
+  left: 3em;
+  top: 1em;
+  color: white;
+  text-transform: capitalize;
+}
+#phone-reservation {
+  position: absolute;
+  right: 3em;
+  top: 1em;
+  color: white;
+}
+.reservation-text {
+  font-weight: bold;
+  font-size: 1.15em;
+}
+.mobile-button {
+  display: none;
+  position: absolute;
+  right: 3em;
+  top: 3em;
+}
+#main-nav {
+  width: 100%;
+  text-align: center;
+  display: table;
+  margin-top: 3em;
+}
+#nav-left,
+#nav-right {
+  display: table-cell;
+  width: 50%;
+}
+#nav-left {
+  text-align: left;
+  padding-left: 2em;
+}
+#nav-right {
+  text-align: right;
+  padding-right: 2em;
+}
+#nav-left li,
+#nav-right li {
+  display: inline-block;
+  padding: 1em;
+}
+#nav-left li a,
+#nav-right li a {
+  font-size: 1.15em;
+  text-transform: capitalize;
+  color: white;
+}
+@media(max-width:500px){
+  #nav-left li a,
+  #nav-right li a{
+    font-size: 1.25em;
+  }
+}
+.menu-btn {
+  height: 3em;
+  transition: 0.3s;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 0.75em;
+  position: absolute;
+  width: 3.5em;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  }
+  .menu-btn hr {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  position: absolute;
+  border: 0.25em solid white;
+  height: 0;
+  }
+  .menu-btn-hr-1 {
+  top: 0;
+  left: 50%;
+  -moz-transform: translateX(-50%) rotate(0deg);
+  -ms-transform: translateX(-50%) rotate(0deg);
+  -o-transform: translateX(-50%) rotate(0deg);
+  -webkit-transform: translateX(-50%) rotate(0deg);
+  transform: translateX(-50%) rotate(0deg);
+  }
+  .menu-btn-hr-2 {
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  .menu-btn-hr-3 {
+  bottom: 0;
+  left: 50%;
+  -moz-transform: translateX(-50%) rotate(0deg);
+  -ms-transform: translateX(-50%) rotate(0deg);
+  -o-transform: translateX(-50%) rotate(0deg);
+  -webkit-transform: translateX(-50%) rotate(0deg);
+  transform: translateX(-50%) rotate(0deg);
+  }
+  .menu-btn.active .menu-btn-hr-1 {
+  top: 50%;
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  -o-transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  .menu-btn.active .menu-btn-hr-2 {
+  opacity: 0;
+  }
+  .menu-btn.active .menu-btn-hr-3 {
+  top: 50%;
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  -o-transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+@media(max-width: 850px){
+  #online-reservation {
+    left: 1em;
+  }
+  #phone-reservation {
+    right: 1em;
+  }
+  #nav-left {
+    padding-left: 0em;
+  }
+  #nav-right {
+    padding-right: 0em;
+  }
+}
+@media(max-width:750px){
+  #masthead{
+    height: 6.5em;
+    background: #1E1E1E;
+  }
+  .mobile-button{
+    display: block;
+  }
+  #main-nav,
+  #nav-left,
+  #nav-right,
+  #nav-left li,
+  #nav-right li{
+    display: block;
+    width: 100%;
+  }
+  #main-nav{
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+    top: 20em;
+    bottom: auto;
+    top: 3.5em;
+  }
+  #main-nav{
+    display: none;
+  }
+  #main-nav.active{
+    display: block;
+  }
+  #nav-left{
+    text-align: right;
+  }
+  #phone-reservation{
+    right: auto;
+    left: 1em;
+    top: 4em;
+  }
+}
+@media(max-width: 540px){
+  #phone-reservation .reservation-text {
+    display: none;
+  }
+  #phone-reservation .material-symbols-outlined{
+    color: #333;
+    background-color: white;
+    font-size: 2em;
+    border-radius: 3em;
+    padding: 0.14em;
+  }
+  #phone-reservation{
+    top:2em;
+  }
+  #online-reservation{
+    position: fixed;
+    bottom: 0;
+    display: block;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    padding: 1em;
+    background: rgba(0,0,0,0.5);
+  }
+}
+/*=====================*/
+main{
+  max-width: 85em;
+  margin: 0 auto;
+}
+/*====================*/
+
+  footer {
+    padding: 2em;
+    background: #21304d;
+  }
+  #logo.footer{
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: 0 auto;
+    width: auto;
+  }
+
+
+
+  #social-icons img {
+  width: 2.5em;
+  background: white;
+  border-radius: 0.75em;
+  padding: 0.25em;
+  }
+  
+  #second-footer-row {
+  display: table;
+  width: 100%;
+  max-width: 85em;
+  margin: 0 auto;
+}
+
+  #second-footer-row li {
+  display: table-cell;
+  width: 33.3%;
+  text-align: center;
+  }
+  #second-footer-row a {
+  display: block;
+  text-transform: capitalize;
+  line-height: 2em;
+  text-align: center;
+  color: white;
+  }
+  
+  #footer-phone .material-symbols-outlined {
+  display: inline-block;
+  font-weight: bold;
+  }
+  #footer-phone p {
+  display: inline-block;
+  }
+  #footer-map .material-symbols-outlined {
+  display: inline-block;
+  font-weight: bold;
+  float: ;
+  }
+  #footer-map p {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.25em;
+  text-align: left;
+  }
+  #footer-phone {
+  margin-bottom: 2em;
+  }
+  #footer-map {
+  margin-bottom: 2em;
+  }
+  #social-icons a {
+  display: inline-block;
+  }
+  @media(max-width:950px){
+  #second-footer-row {
+    text-align: center;
+  }
+  #second-footer-row li{
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 2em;
+    vertical-align: top;
+  }
+  }
+  @media(max-width:600px){
+    #palm-left,
+  #palm-right {
+     display: none; 
+  }
+  #second-footer-row li{
+    width: 100%;
+  }
+  #first-footer-row li{
+    width: 100%;
+    display: block;
+    border-bottom: none;
+    padding: 0;
+  }
+  }
+
+.border {
+  height: 2em;
+  border: 0;
+}
