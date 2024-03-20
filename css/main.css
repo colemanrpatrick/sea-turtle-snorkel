@@ -28,8 +28,6 @@ b {
 }
 ul,
 ul li {
-  list-style-type: none;
-  list-style-position: inside;
 }
 html {
   overflow-x: hidden;
@@ -450,4 +448,9 @@ main{
 .border {
   height: 2em;
   border: 0;
+}
+
+
+#calendar-container {
+  padding: 2em;
 }

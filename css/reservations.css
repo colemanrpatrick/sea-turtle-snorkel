@@ -1,0 +1,135 @@
+#reservation-header {
+  margin-top: 6.5em;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+#reservation-header section {
+  background: rgba(0,0,0,0.5);
+  padding: 10em 0em;
+  text-align: center;
+}
+#reservation-header h1 {
+font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  line-height: 1.25em;
+  text-shadow: 0em 0em 3em rgba(0,0,0,0.5);
+}
+#book-now {
+  display: inline-block;
+  margin: 0 auto;
+  background: #de1f26;;
+  border-radius: 2em;
+  padding: 0.5em;
+  margin-top: 1em;
+  box-shadow: 0em 0em 3em rgba(0,0,0,0.5);
+}
+#book-now span{
+  text-transform: capitalize;
+  color: white;
+  font-size: 1.25em;
+  vertical-align: middle;
+  font-weight: normal;
+}
+#book-now .material-symbols-outlined {
+background: #1e1e1e;
+  color: white;
+  vertical-align: middle;
+  border-radius: 1em;
+  font-size: 1.5em;
+  padding: 0.125em;
+}
+#reservation-description {
+  background: #C5D5E4;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-image: none;
+  background-size: auto;
+  background-image: url("../images/waves1.jpg");
+  background-size: 100%;
+  background-position: 0% 25%;
+  background-repeat: no-repeat;
+  padding: 10em 5em;
+}
+#reservation-description p {
+  font-size: 1.15em;
+  line-height: 2em;
+}
+#reservation-description h2 {
+  text-transform: capitalize;
+  color: #21304d;
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+#reservations-article {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em;
+  width: 50%;
+}
+#reservation-details {
+  display: table;
+  background: #c5d5e4;
+  padding: 2em;
+}
+#reservatinos-video {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#reservations-article h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #20304d;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.paragraph-half {
+  display: inline-block;
+  width: 49%;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 2em;
+}
+.paragraph-half b {
+  display: block;
+  font-size: 2em;
+  color: #20304d;
+}
+#reservations-article ul {
+  margin: 1em auto;
+  line-height: 2em;
+  font-size: 1.15em;
+}
+
+#reservation-description {
+  background: #C5D5E4;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-image: none;
+  background-size: auto;
+  background-image: url("../images/waves1.jpg");
+  background-size: 100%;
+  background-position: 0% 25%;
+  background-repeat: no-repeat;
+  padding: 10em 5em;
+}
+#reservation-description p {
+  font-size: 1.15em;
+  line-height: 2em;
+}
+#reservation-description h2 {
+  text-transform: capitalize;
+  color: #21304d;
+  font-size: 1.5em;
+}
+
