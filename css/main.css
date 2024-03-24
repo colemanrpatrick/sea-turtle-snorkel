@@ -600,3 +600,33 @@ font-size: 2em;
     width: 85%;
   }
 }
+/*========== about us =============*/
+
+#about-us article {
+  background: gainsboro;
+  padding: 2em;
+}
+#about-us article h2 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #044678;
+}
+#about-us p {
+  font-size: 1.15em;
+  line-height: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 1em;
+}
+#about-us ul {
+  display: block;
+  margin: 0 auto;
+  max-width: 30em;
+  line-height: 2em;
+  color: #001627;
+  font-size: 1.15em;
+  margin-bottom: 1em;
+  text-align: center;
+}
