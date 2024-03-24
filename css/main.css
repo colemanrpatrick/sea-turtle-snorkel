@@ -94,7 +94,10 @@ li {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
 }
-
+iframe
+{
+  width: 100%;
+}
 #masthead {
   width: 100%;
   display: block;
@@ -453,4 +456,147 @@ main{
 
 #calendar-container {
   padding: 2em;
+}
+/*=========== page header ===========*/
+#page-header {
+  margin-top: 6.5em;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+#page-header section {
+  background: rgba(0,0,0,0.5);
+  padding: 10em 0em;
+  text-align: center;
+}
+#page-header h1 {
+font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  line-height: 1.25em;
+  text-shadow: 0em 0em 3em rgba(0,0,0,0.5);
+}
+
+
+
+/*=========== faq ===========*/
+.accordion {
+  width: 100%;
+  background: gainsboro;
+  margin: 0 auto;
+  padding: 2em;
+}
+.accordion .tab {
+  width: 100%;
+  background: whitesmoke;
+  list-style-type: none;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.accordion .tab button {
+  padding: 1em;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+  background: #044678;
+  border-bottom: 2px solid #1c5c77;
+  color: #efefef;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.15em;
+  width: 100%;
+  border: 0;
+  border-bottom: 0.15em solid white;
+}
+.accordion .tab.active button {
+  color: #044678;
+  background: #f7b801;
+}
+.accordion .tab .content {
+  width: 100%;
+  padding: 3em;
+  text-align: center;
+  transform-origin: top;
+  border-bottom: 0.2em solid gainsboro;
+}
+.accordion .tab .content p {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5em;
+  max-width: 40em;
+  margin: 0 auto;
+  width: 90%;
+}
+.accordion .tab .content {
+  display: none;
+}
+@keyframes fadeIn{
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.accordion .tab.active .content {
+  display: block;
+  height: auto;
+  animation:fadeIn 0.3s ease-out;
+  -webkit-animation: fadeIn 0.3s ease-out;
+  -moz-animation: fadeIn 0.3s ease-out;
+}
+
+.tab button p {
+  width: 95%;
+  display: inline-block;
+  text-align: left;
+  font-weight: bold;
+}
+
+.material-symbols-outlined.chevron_right {
+  vertical-align: middle;
+  color: #333;
+  background: white;
+  border-radius: 1em;
+}
+.material-symbols-outlined.close_small {
+  background: #333;
+  color: gold;
+  border-radius: 1em;
+  vertical-align: middle;
+}
+.accordion .tab .close_small {
+  display: none;
+}
+.accordion .tab .chevron_right {
+  display: inline-block;
+}
+
+.accordion .tab.active .close_small {
+  display: inline-block;
+}
+.accordion .tab.active .chevron_right {
+  display: none;
+}
+@media (max-width: 750px) {
+  .tab button p {
+    width: 85%;
+  }
 }

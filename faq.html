@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Sea Turtle Snorkel Tours</title>
+  <meta content="user-scalable = yes, width=320, initial-scale=1" name="viewport" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Bakbak+One&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+<!-- =================================================== -->
+
+<body>
+  <!-- ================================================= -->
+  <!-- ========== masthead ========== -->
+  <header id="masthead">
+
+    <nav id="logo">
+      <a href="/">
+        <img src="images/seaturtle-snorkel-tours-aqua-zone-dive-team.png"
+          alt="sea turtle snorkel tours aqua zone dive team">
+        <b>seaturtle snorkel<br><span>tours</span></b>
+      </a>
+    </nav>
+
+    <nav id="main-nav">
+      <ul id="nav-left">
+        <li><a href="/reservations.htm">reservations</a></li>
+        <li><a href="/about.htm">about</a></li>
+      </ul>
+      <ul id="nav-right">
+        <li><a href="/gallery.htm">gallery</a></li>
+        <li><a href="/faq.htm">faq</a></li>
+        <li><a href="/contact.htm">contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#" id="online-reservation">
+      <span class="material-symbols-outlined">calendar_month</span>
+      <span class="reservation-text">book online</span>
+    </a>
+
+    <a href="tel:+18083068157" id="phone-reservation">
+      <span class="material-symbols-outlined">call</span>
+      <span class="reservation-text">808-306-8157</span>
+    </a>
+
+    <div class="mobile-button">
+      <button class="menu-btn" id="menu-btn" name="button"
+        onclick="idToggle('menu-btn','active');idToggle('main-nav','active')" type="button">
+        <hr class="menu-btn-hr-1">
+        <hr class="menu-btn-hr-2">
+        <hr class="menu-btn-hr-3">
+      </button>
+    </div>
+
+  </header>
+  <main>
+    <!-- ================================================= -->
+    <div id="faq">
+      <div id="page-header" style="background-image: url('images/seaturtlesnorkel-header.jpg');">
+        <section>
+          <h1>Frequently Asked Questions</h1>
+        </section>
+      </div>
+      <ul class="accordion">
+        <li class="tab">
+          <button type="button" onclick="tabToggle(this,'tab');event.preventDefault()">
+            <p>question 1</p>
+            <span class="material-symbols-outlined chevron_right">chevron_right</span>
+            <span class="material-symbols-outlined close_small">close_small</span>
+          </button>
+          <article class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ipsam impedit minus adipisci dolorem
+              ratione, excepturi animi non eum accusamus magnam temporibus earum delectus asperiores tempore itaque
+              deleniti veniam odio!</p>
+          </article>
+        </li>
+        <li class="tab">
+          <button type="button" onclick="tabToggle(this,'tab');event.preventDefault()">
+            <p>question 2</p>
+            <span class="material-symbols-outlined chevron_right">chevron_right</span>
+            <span class="material-symbols-outlined close_small">close_small</span>
+          </button>
+          <article class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ipsam impedit minus adipisci dolorem
+              ratione, excepturi animi non eum accusamus magnam temporibus earum delectus asperiores tempore itaque
+              deleniti veniam odio!</p>
+          </article>
+        </li>
+        <li class="tab">
+          <button type="button" onclick="tabToggle(this,'tab');event.preventDefault()">
+            <p>question 3</p>
+            <span class="material-symbols-outlined chevron_right">chevron_right</span>
+            <span class="material-symbols-outlined close_small">close_small</span>
+          </button>
+          <article class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ipsam impedit minus adipisci dolorem
+              ratione, excepturi animi non eum accusamus magnam temporibus earum delectus asperiores tempore itaque
+              deleniti veniam odio!</p>
+          </article>
+        </li>
+        <li class="tab">
+          <button type="button" onclick="tabToggle(this,'tab');event.preventDefault()">
+            <p>question 4</p>
+            <span class="material-symbols-outlined chevron_right">chevron_right</span>
+            <span class="material-symbols-outlined close_small">close_small</span>
+          </button>
+          <article class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ipsam impedit minus adipisci dolorem
+              ratione, excepturi animi non eum accusamus magnam temporibus earum delectus asperiores tempore itaque
+              deleniti veniam odio!</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+    <!-- ================================================= -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1043.1814726968078!2d-157.85651618096176!3d21.292186955635977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c007270ce925d4d%3A0x7e007ae15b1fda04!2sAqua%20Zone!5e0!3m2!1sen!2sus!4v1707364062125!5m2!1sen!2sus"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- ================================================= -->
+  </main>
+  <footer>
+    <ul id="second-footer-row">
+      <li>
+        <nav id="logo" class="footer">
+          <a href="/">
+            <img src="images/seaturtle-snorkel-tours-aqua-zone-dive-team.png"
+              alt="sea turtle snorkel tours aqua zone dive team">
+            <b>seaturtle snorkel<br><span>tours</span></b>
+          </a>
+        </nav>
+        <div id="footer-phone">
+          <a href="tel:+18083068157">
+            <span class="material-symbols-outlined">call</span>
+            <p>1-808-306-8157</p>
+          </a>
+        </div>
+        <div id="footer-map">
+          <a href="https://maps.app.goo.gl/2poxJBkgmMpn9bZz9">
+            <span class="material-symbols-outlined">location_on</span>
+            <p><b>Aqua Zone</b><br>Kewalo Harbor - Slip A, 8<br>Honolulu, HI 96815</p>
+          </a>
+        </div>
+        <div id="social-icons">
+          <a href=""><img src="images/social/twitter.svg" alt=""></a>
+          <a href=""><img src="images/social/facebook.svg" alt=""></a>
+          <a href=""><img src="images/social/instagram.svg" alt=""></a>
+          <a href=""><img src="images/social/yelp.svg" alt=""></a>
+        </div>
+      </li>
+      <li>
+        <a href="/snorkeltours.htm">snorkel tours</a>
+        <a href="/privatetours.htm">private tours</a>
+        <a href="/gallery.htm">gallery</a>
+        <a href="/about.htm">about</a>
+      </li>
+      <li>
+        <a href="/">home</a>
+        <a href="/faq.htm">faq</a>
+        <a href="/sitemap.htm">sitemap</a>
+        <a href="/contact.htm">contact</a>
+      </li>
+    </ul>
+  </footer>
+  <!-- ================================================= -->
+  <script src="js/ie9exclude.js" type="text/javascript"></script>
+  <script src="js/toggle.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <!-- ================================================= -->
+</body>
+
+</html>
